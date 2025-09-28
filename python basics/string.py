@@ -89,3 +89,5 @@ print(f"hii my name is jyoti and my age is {age}")
 
 print(f"hey can you convert my age in decimal yes here it is {age:.2f}")
 print(f"the multipliaction operation {56*34 : .2f}")
+
+
