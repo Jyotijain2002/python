@@ -1,0 +1,12 @@
+oop: object oriented programming
+
+Advantages of oop:
+1 provides a clear structure to program
+2 make it easier to maintain, reuse and debug
+3 follow DRY principle
+4 allows you to build resuable applications with less code
+
+
+class: class is a template to create a object , it have all methods, vaiables that a object can have.
+
+Object: a real entity that is created with the help of class and inherits all the variables and methods of the class from which it is created
