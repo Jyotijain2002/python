@@ -90,4 +90,44 @@ print(f"hii my name is jyoti and my age is {age}")
 print(f"hey can you convert my age in decimal yes here it is {age:.2f}")
 print(f"the multipliaction operation {56*34 : .2f}")
 
+# we can perform if-else statement inside the placeholder
+price=67
+txt=f"it is very {'expensive' if price>50 else 'cheap' }"
+print(txt)
 
+
+# can also call function inside a placeholder
+
+def my_doubler(x):
+    return 2*x
+
+txt=f"due to inflation the price of rice is doubled up by {my_doubler(45)} per kg"
+print(txt)
+
+
+# format() method:The format() method can still be used, but f-strings are faster and the preferred way to format strings.
+# The format() method also uses curly brackets as placeholders {}, but the syntax is slightly different:
+# we can give multiple values using format mrthod
+
+txt= "the price is {} dollars"
+print(txt.format(49))
+
+txt="hey my name is {} and my age is {}"
+print(txt.format("jyoti jain",22)) #op: hey my name is jyoti jain and my age is 22
+
+'''
+Index Numbers
+You can use index numbers (a number inside the curly brackets {0}) to be sure the values are placed in the correct placeholders:
+'''
+quantity = 3
+itemno = 567
+price = 49
+myorder = "I want {0} pieces of item number {1} for {2:.2f} dollars."
+print(myorder.format(quantity, itemno, price))
+
+'''
+Named Indexes
+You can also use named indexes by entering a name inside the curly brackets {carname}, but then you must use names when you pass the parameter values txt.format(carname = "Ford"):
+'''
+myorder = "I have a {carname}, it is a {model}."
+print(myorder.format(carname = "Ford", model = "Mustang"))
