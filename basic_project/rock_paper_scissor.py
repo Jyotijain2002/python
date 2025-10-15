@@ -32,3 +32,4 @@ while True:
  
 
  # modularise your code in a clear and readable way using function 
+ # breaking code into small reusable parts is called refactoring
