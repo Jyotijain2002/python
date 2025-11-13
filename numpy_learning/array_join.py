@@ -95,7 +95,7 @@ op:
 [5 6 7 8]]
 '''
 
-# stacking along height(depth): using numpy helper function dstack() (d stand for depth)
+# stacking along height(depth): using numpy helper function dstack() (d stands for depth)
 
 arr=np.dstack((arr1,arr2))
 print(arr)
