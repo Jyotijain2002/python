@@ -15,7 +15,7 @@ arr=np.array([11,42,63,74,85])
 x=[True,False,False,True,True]
 
 filtered_arr=arr[x]
-print(filtered_arr) # [1,4,5]
+print(filtered_arr) # [11,74,85]
 
 
 
