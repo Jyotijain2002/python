@@ -1,0 +1,1 @@
+ax2.plot(100+np.arange(len(J_hist[100:])),J_hist[100:])
