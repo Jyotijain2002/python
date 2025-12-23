@@ -4,7 +4,7 @@ from ipywidgets import Output
 from matplotlib.widgets import Button, CheckButtons
 from matplotlib.patches import FancyArrowPatch
 from lab_utils_common import np, plt, dlblue, dlorange, sigmoid, dldarkred, gradient_descent
-
+print(dir(CheckButtons))
 # for debug
 #output = Output() # sends hidden error messages to display when using widgets
 #display(output)
@@ -63,7 +63,7 @@ class plt_one_addpt_onclick:
             self.bcalc.on_clicked(self.calc_linear)
         self.bthresh = CheckButtons(axthresh, ('Toggle 0.5 threshold (after regression)',))
         self.bthresh.on_clicked(self.thresh)
-        self.resize_sq(self.bthresh)
+       
 
  #   @output.capture()  # debug
     def add_data(self, event):
@@ -167,20 +167,6 @@ class plt_one_addpt_onclick:
             artist.remove()
         self.fig.canvas.draw()
 
-    def resize_sq(self, bcid):
-        """ resizes the check box """
-        #future reference
-        #print(f"width  : {bcid.rectangles[0].get_width()}")
-        #print(f"height : {bcid.rectangles[0].get_height()}")
-        #print(f"xy     : {bcid.rectangles[0].get_xy()}")
-        #print(f"bb     : {bcid.rectangles[0].get_bbox()}")
-        #print(f"points : {bcid.rectangles[0].get_bbox().get_points()}")  #[[xmin,ymin],[xmax,ymax]]
-
-        h = bcid.rectangles[0].get_height()
-        bcid.rectangles[0].set_height(3*h)
-
-        ymax = bcid.rectangles[0].get_bbox().y1
-        ymin = bcid.rectangles[0].get_bbox().y0
-
-        bcid.lines[0][0].set_ydata([ymax,ymin])
-        bcid.lines[0][1].set_ydata([ymin,ymax])
+  
+       
+        
