@@ -1,0 +1,2 @@
+tf_env/
+echo VSCodeUserSetup-x64-*.exe >> .gitignore
